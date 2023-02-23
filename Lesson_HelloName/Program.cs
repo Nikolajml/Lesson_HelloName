@@ -7,8 +7,6 @@
 
 
 
-
-
     /*Задание 2
 
     Напишите программу определения, попадает ли указанное пользователем число от 0 до 100 
@@ -18,6 +16,7 @@
     Если пользователь указывает число, не входящее ни в один из имеющихся числовых промежутков, 
     то выводится соответствующее сообщение.
     */
+
 
     public static void Task2()
     {
@@ -138,14 +137,18 @@
 
     public static void Task4_1()
     {
-        Console.WriteLine("Enter a number:");
+        int a;
 
-        bool number = bool.Parse(Console.ReadLine());
+        a = int.Parse(Console.ReadLine());
 
-        if (number)
-            Console.WriteLine(  number % 2 == 0 ? "Number is even" : "Number is odd");
+        int temp = a % 2;
+
+        bool result = temp == 0;        
+          
+        if (result)
+            Console.WriteLine(a % 2 == 0 ? "Your number is even" : "Your number is uneven");
         else
-            Console.WriteLine("Error");
+            Console.WriteLine("Your number is uneven");
 
 
     }
@@ -170,9 +173,7 @@
    */
 
 
-
-
-    public static void Task1()
+        public static void Task1()
     {
         int operand1 = 108;
         int operand2 = 4;
