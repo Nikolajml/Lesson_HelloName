@@ -1,8 +1,10 @@
-﻿internal class Program
+﻿using Lesson_HelloName;
+
+internal class Program
 {
     static void Main(string[] args)
     {
-        Task4_1();
+        HomeTask3.Task1();
     }
 
 
