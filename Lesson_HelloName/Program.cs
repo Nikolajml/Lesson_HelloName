@@ -175,7 +175,7 @@ internal class Program
    */
 
 
-        public static void Task1()
+    public static void Task1()
     {
         int operand1 = 108;
         int operand2 = 4;
