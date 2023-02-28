@@ -30,9 +30,6 @@ namespace Lesson_HelloName
         }
 
 
-
-
-
         /// <summary>
         /// Создайте массив целых чисел. Удалите все вхождения заданного числа из массива.
         /// Пусть число задается с консоли.Если такого числа нет - выведите сообщения об этом. 
@@ -40,10 +37,8 @@ namespace Lesson_HelloName
         /// </summary>
         public static void Task1()
         {
-            
             int[] numbers = new int[5] { 10, 25, 31, 47, 50 };
-
-            
+                        
             Console.WriteLine("\nEnter a number you want to delete: ");
             int deleteNumber = int.Parse(Console.ReadLine());
 
@@ -54,24 +49,19 @@ namespace Lesson_HelloName
                     Console.WriteLine("Enter a new number");
                     return;
                 }
-
             }
-
                // НЕ РАЗОБРАЛСЯ С РЕШЕНИЕМ ЭТОЙ ЗАДАЧИ
                // МОЖНО РАЗОБРАТЬ ЕЕ РЕШЕНИЕ В НАЧАЛЕ ЗАНЯТИЯ
-
-
         }
 
-            /// <summary>
-            /// Создайте и заполните массив случайным числами и выведете максимальное, минимальное и среднее значение.
-            /// Для генерации случайного числа используйте метод Random().
-            /// Пусть будет возможность создавать массив произвольного размера. Пусть размер массива вводится с консоли. 
-            /// </summary>
 
+        /// <summary>
+        /// Создайте и заполните массив случайным числами и выведете максимальное, минимальное и среднее значение.
+        /// Для генерации случайного числа используйте метод Random().
+        /// Пусть будет возможность создавать массив произвольного размера. Пусть размер массива вводится с консоли. 
+        /// </summary>
         public static void Task2()
         {
-
             Random random = new Random();
 
             int a = int.Parse(Console.ReadLine());
@@ -81,13 +71,11 @@ namespace Lesson_HelloName
             {
                 numbers[i] = (int)random.Next(0, 1000);
             }
-
-                      
+                                  
             int minNumber = numbers[0];
             int maxNumber = numbers[0];
             int sum = 0;
-                        
-            
+                              
             for (int i = 0; i < numbers.Length; i++)
             {
                 if (numbers[i] < minNumber)
@@ -104,15 +92,9 @@ namespace Lesson_HelloName
             
             int average = sum / numbers.Length;
 
-
             Console.WriteLine("Minimum number is: " + minNumber);
             Console.WriteLine("Maximum number is: " + maxNumber);
             Console.WriteLine("Average number is: " + average);
-                     
-         
-        
-        
-        
         }
 
 
@@ -130,7 +112,6 @@ namespace Lesson_HelloName
             double sum1 = 0;
             double sum2 = 0;
 
-
             for (int i = 0; i < numbers1.Length; i++)               // Не разобрался как вывести элементы для двух массивов в двух разных строках 
             {
                 Console.Write(numbers1[i] + " ");  
@@ -139,8 +120,7 @@ namespace Lesson_HelloName
             for (int i = 0; i < numbers1.Length; i++)
             {
                 Console.Write(numbers2[i] + " ");
-            }
-                        
+            }                    
 
             for (int i = 0; i < numbers1.Length; i++)
             {
@@ -148,13 +128,11 @@ namespace Lesson_HelloName
                 sum2 += numbers2[i];
             }
 
-
             double average1 = sum1 / numbers1.Length;
             double average2 = sum2 / numbers2.Length;
             
             Console.WriteLine("\t" + "average1 is: " + average1);
             Console.WriteLine("\t" + "average2 is: " + average2);
-
 
             if (average1 > average2)
             {
@@ -167,13 +145,7 @@ namespace Lesson_HelloName
             else if (average1 == average2)
             {
                 Console.WriteLine($"average1 is equal average2");
-            }
-        
-
-        }
-        
-    }
-      
-   
-
+            }       
+        }       
+    }       
 }
