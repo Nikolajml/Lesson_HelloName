@@ -28,8 +28,6 @@ namespace Lesson_HelloName
                 }
             }
         }
-
-
         /// <summary>
         /// Создайте массив целых чисел. Удалите все вхождения заданного числа из массива.
         /// Пусть число задается с консоли.Если такого числа нет - выведите сообщения об этом. 
@@ -37,24 +35,40 @@ namespace Lesson_HelloName
         /// </summary>
         public static void Task1()
         {
-            int[] numbers = new int[5] { 10, 25, 31, 47, 50 };
-                        
-            Console.WriteLine("\nEnter a number you want to delete: ");
+            Random random = new Random();            
+            
+            int[] numbers = { 10, 25, 10, 47, 50, 10 };
+
+            Console.WriteLine("Enter a number you want to delete: ");
             int deleteNumber = int.Parse(Console.ReadLine());
 
-            for (int i = 0; i < 5; i++)
+            int counter = 0;            
+            for (int i = 0; i < numbers.Length; i++)
             {
-                if (numbers[i] != deleteNumber) ;
+                if (numbers[i] == deleteNumber)
                 {
-                    Console.WriteLine("Enter a new number");
-                    return;
+                    counter++;
+                }                
+            }
+
+            Console.WriteLine(counter);
+
+            int[] newArray = new int[numbers.Length - counter];
+
+            for (int i = 0, j = 0; i < numbers.Length; i++)
+            {
+                if (numbers[i] != deleteNumber)
+                {
+                    newArray[j] = numbers[i];
+                    j++;
                 }
             }
-               // НЕ РАЗОБРАЛСЯ С РЕШЕНИЕМ ЭТОЙ ЗАДАЧИ
-               // МОЖНО РАЗОБРАТЬ ЕЕ РЕШЕНИЕ В НАЧАЛЕ ЗАНЯТИЯ
-        }
 
-
+            foreach (int number in newArray)
+            {
+                Console.Write("\n" + number);
+            }            
+        }              
         /// <summary>
         /// Создайте и заполните массив случайным числами и выведете максимальное, минимальное и среднее значение.
         /// Для генерации случайного числа используйте метод Random().
@@ -96,8 +110,6 @@ namespace Lesson_HelloName
             Console.WriteLine("Maximum number is: " + maxNumber);
             Console.WriteLine("Average number is: " + average);
         }
-
-
         /// <summary>
         /// Создайте 2 массива из 5 чисел. 
         /// Выведите массивы на консоль в двух отдельных строках. 
