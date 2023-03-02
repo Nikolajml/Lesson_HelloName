@@ -4,7 +4,7 @@ internal class Program
 {
     static void Main(string[] args)
     {
-        HomeTask3.Task1();
+        HomeTask4.Task5();
     }
 
 
