@@ -85,13 +85,5 @@
             string[] bankCardNumber = bankCard.Split(new char[]{'-'});          // Вывести на экран в одну строку два первых блока по 4 цифры.
             Console.WriteLine(bankCardNumber[0] + " " + bankCardNumber[2]);
         }
-
-
-
-
-
-
-
-
     }
 }
