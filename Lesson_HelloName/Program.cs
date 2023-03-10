@@ -7,7 +7,7 @@ namespace Lesson_HelloName
     {
         static void Main(string[] args)
         {
-            HomeTask5.Task2();
+            HomeTask6.Task1();
         }
         /*Задание 2
         Напишите программу определения, попадает ли указанное пользователем число от 0 до 100 
