@@ -8,8 +8,7 @@ namespace Lesson_HelloName.Classes.Lesson_7_classes
 {
     internal class GetInfo : Bus
     {
-        public Bus() 
-
+        
         public void Main()
         {
             Console.WriteLine(new Bus("Minsk", 4876, "08:00", 10));

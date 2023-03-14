@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Lesson_HelloName.Classes.Lesson_7_classes
 {
-    internal class Transport
+    abstract class Transport
     {
         public string destination;
         public int number;
