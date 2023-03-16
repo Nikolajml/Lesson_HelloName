@@ -8,15 +8,16 @@ namespace Lesson_HelloName.Classes.Lesson_7_classes
 {
     internal class Aircraft : Air
     {
-        public Aircraft(string destination, int number, string departureTime, int places, string kindOfTransport) : base(destination, number, departureTime, places, kindOfTransport)
+        public Aircraft(string destination, int number, string departureTime, int numberOfSeats, string transportType) : base(destination, number, departureTime, numberOfSeats, transportType)
         {
-        }      
-        
-        //public Aircraft() { }
-
-        public override void GetKindOfTransport()
-        {
-            Console.WriteLine($"The kind of transport is {kindOfTransport}");
         }
+              
+
+        public override void GetTransportType()
+        {
+            Console.WriteLine("\n" + $"The type of transport is {transportType}");
+        }
+
+
     }
 }

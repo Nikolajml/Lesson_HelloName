@@ -6,29 +6,29 @@ using System.Threading.Tasks;
 
 namespace Lesson_HelloName.Classes.Lesson_7_classes
 {
-    abstract class Transport
+    public class Transport
     {
         public string destination;
         public int number;
         public string departureTime;
-        public int places;
+        public int numberOfSeats;
 
-        public Transport(string destination, int number, string departureTime, int places)
+        public Transport(string destination, int number, string departureTime, int numberOfSeats)
         {
             this.destination = destination;
             this.number = number;
             this.departureTime = departureTime;
-            this.places = places;
+            this.numberOfSeats = numberOfSeats;
         }
 
         public Transport()
         {
         }
-                
+            
 
-        public virtual void GetKindOfTransport()
+        public virtual void GetTransportType()
         {
-            Console.WriteLine("The kind of transport is ");
+            Console.WriteLine("Transport type");
         }
     }
 }

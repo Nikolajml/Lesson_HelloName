@@ -11,11 +11,17 @@ namespace Lesson_HelloName
     {
         public static void Task1()
         {
-            Aircraft aircraft = new Aircraft("Moscow", 4567, "10:10", 100, "Air");
-            aircraft.GetKindOfTransport();
-
             //GetInfo bus = new GetInfo();
-            //bus.Main();           
+            //bus.Main();
+            
+            //GetInfo getInfo = new GetInfo();
+            //getInfo.TransportArray();
+
+            //Transport aircraft = new Aircraft("Stambul", 1456, "11:00", 310, "Air");           
+            //aircraft.GetTransportType();
+            
+            GetInfo setParametres = new GetInfo();
+            setParametres.SetDestinationOrDepatureTime();
 
 
         }

@@ -8,13 +8,13 @@ namespace Lesson_HelloName.Classes.Lesson_7_classes
 {
     internal class Autobus : Аutomobile
     {
-        public Autobus(string destination, int number, string departureTime, int places, string kindOfTransport) : base(destination, number, departureTime, places, kindOfTransport)
+        public Autobus(string destination, int number, string departureTime, int numberOfSeats, string transportType) : base(destination, number, departureTime, numberOfSeats, transportType)
         {         
         }
 
-        public override void GetKindOfTransport()
+        public override void GetTransportType()
         {
-            Console.WriteLine($"The kind of transport is {kindOfTransport}");
+            Console.WriteLine($"The kind of transport is {transportType}");
         }
     }
 }

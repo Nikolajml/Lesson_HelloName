@@ -12,20 +12,6 @@ namespace Lesson_HelloName.Classes.Lesson_7_classes.Task2
         {            
         }
 
-        public override int GetLoadCapaticyForMoto(int carriage)
-        {
-            if (carriage == 1)
-            {
-                double loadCapacity = +80.00;                
-            }
-            else if (carriage < 1)
-            {
-                double loadCapacity = 00.00;                
-            }
-            else if (carriage > 1)
-            {
-                Console.WriteLine("You can't use more than 1 carriage.");                
-            }
-        }
+        
     }
 }
