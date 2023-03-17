@@ -13,7 +13,6 @@ namespace Lesson_HelloName.Classes.Lesson_7_classes
         public string departureTime { get; set; }
         public int numberOfSeats { get; set; }
 
-
         public Bus(string destination, int number, string departureTime, int numberOfSeats)
         {
             this.destination = destination;

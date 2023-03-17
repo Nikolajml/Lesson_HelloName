@@ -14,11 +14,5 @@ namespace Lesson_HelloName.Classes.Lesson_7_classes
         {
             this.transportType = "Railway transport";
         }
-
-        //public override void GetTransportType()
-        //{
-        //    Console.WriteLine($"The type of transport is {transportType}");
-        //}
-
     }
 }

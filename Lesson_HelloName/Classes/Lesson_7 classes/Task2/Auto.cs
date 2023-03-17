@@ -12,15 +12,13 @@ namespace Lesson_HelloName.Classes.Lesson_7_classes.Task2
         public string mark;
         public int number;
         public double speed;
-        public double loadCapacity;
+        public double loadCapacity;     
 
-
-        public Auto(string mark,int number, double speed, double loadCapacity)
+        public Auto(string mark,int number, double speed)
         {
             this.mark = mark;
             this.number = number;
-            this.speed = speed;
-            this.loadCapacity = loadCapacity;
+            this.speed = speed;            
         }
 
         public virtual void GetInfo()
@@ -28,6 +26,14 @@ namespace Lesson_HelloName.Classes.Lesson_7_classes.Task2
             Console.WriteLine($"Mark: {mark}; Number: {number}, Speed: {speed}, Load capacity: {loadCapacity}");
         }
 
-        
+        public virtual double GetMotoCarrying()
+        {
+            return loadCapacity += 80;
+        }
+
+        public virtual double GetTruckCarrying()
+        {
+            return loadCapacity += 20000.00;
+        }
     }
 }

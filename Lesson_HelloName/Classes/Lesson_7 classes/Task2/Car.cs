@@ -8,8 +8,14 @@ namespace Lesson_HelloName.Classes.Lesson_7_classes.Task2
 {
     internal class Car : Auto
     {
-        public Car(string mark, int number, double speed, double loadCapacity) : base(mark, number, speed, loadCapacity)
+        public Car(string mark, int number, double speed) : base(mark, number, speed)
         {            
+            this.loadCapacity = 1000.00;
+        }
+
+        public override void GetInfo()
+        {
+            Console.WriteLine($"Mark: {mark}; Number: {number}, Speed: {speed}, Load capacity: {loadCapacity}");
         }
     }
 }

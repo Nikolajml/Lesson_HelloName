@@ -20,12 +20,7 @@ namespace Lesson_HelloName.Classes.Lesson_7_classes
             this.departureTime = departureTime;
             this.numberOfSeats = numberOfSeats;
         }
-
-        public Transport()
-        {
-        }
-            
-
+                
         public virtual void GetTransportType()
         {
             Console.WriteLine("Transport type");

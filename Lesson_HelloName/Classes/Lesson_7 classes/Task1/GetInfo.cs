@@ -7,8 +7,7 @@ using System.Threading.Tasks;
 namespace Lesson_HelloName.Classes.Lesson_7_classes
 {
     internal class GetInfo
-    {
-        
+    {        
         public void Main()
         {
             Bus bus = new Bus("Minsk", 4876, "08:00", 10);
@@ -58,6 +57,28 @@ namespace Lesson_HelloName.Classes.Lesson_7_classes
             foreach ( var transport in transports)
             {
                 if(transport.destination == userDestination || transport.departureTime == userDepartureTime)
+                {
+                    Console.WriteLine(transport);
+                }
+            }
+        }
+
+        public void GetDepatureTime()
+        {
+            Transport[] transports =
+            {
+                new Aircraft("Tashkent", 4456, "12:20", 100, "Air"),
+                new Autobus("Moskow", 1113, "10:20", 44, "Automobile"),
+                new Train("Minsk", 707, "08:00", 670, "Railway"),
+            };
+
+            Console.WriteLine("Enter a time of departure: ");
+            DateTime userDepartureTime = DateTime.Parse(Console.ReadLine());
+
+            foreach (var transport in transports)
+            {
+                DateTime TransportTime = DateTime.Parse(transport.departureTime);
+                if (TransportTime >= userDepartureTime)
                 {
                     Console.WriteLine(transport);
                 }

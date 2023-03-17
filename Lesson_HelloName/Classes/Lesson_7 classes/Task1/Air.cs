@@ -10,11 +10,10 @@ namespace Lesson_HelloName.Classes.Lesson_7_classes
     {
         public string transportType;
 
-        public Air(string destination, int number, string departureTime, int numberOfSeats, string kindOfTransport) : base(destination, number, departureTime, numberOfSeats)
+        public Air(string destination, int number, string departureTime, int numberOfSeats, string transportType) : base(destination, number, departureTime, numberOfSeats)
         {
             this.transportType = "air transport";
         }        
-
         public override void GetTransportType()
         {
             Console.WriteLine($"The type of transport is {transportType}");

@@ -19,6 +19,5 @@ namespace Lesson_HelloName.Classes.Lesson_7_classes
         {
             Console.WriteLine($"The type of transport is {transportType}");
         }
-
     }
 }
