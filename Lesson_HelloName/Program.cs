@@ -1,5 +1,6 @@
 ﻿using Lesson_HelloName;
 using Lesson_HelloName.Classes;
+using Lesson_HelloName.Classes.Lesson_9;
 
 namespace Lesson_HelloName
 {
@@ -7,7 +8,7 @@ namespace Lesson_HelloName
     {
         static void Main(string[] args)
         {
-            HomeTask5.Task2();
+            HomeTask9.Task0();
         }
         /*Задание 2
         Напишите программу определения, попадает ли указанное пользователем число от 0 до 100 
