@@ -68,9 +68,7 @@ namespace Lesson_HelloName.Classes.Lesson_9
             {
                 product.Info();
 
-                bool isExpired = product.CheckIfProductExpired();
-
-                if (isExpired)
+                if (product.CheckIfProductExpired())
                 {
                     expiredProducts.Add(product);
                 }
