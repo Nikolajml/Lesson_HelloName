@@ -36,10 +36,8 @@ namespace Lesson_HelloName.Classes.Lesson_9.SetsOfProducts
             var expiredProducts = new List<Product>();
 
             foreach (var product in products)
-            {
-                bool isExpired = product.CheckIfProductExpired();
-
-                if (isExpired)
+            {                
+                if (product.CheckIfProductExpired())
                 {
                     expiredProducts.Add(product);
                 }

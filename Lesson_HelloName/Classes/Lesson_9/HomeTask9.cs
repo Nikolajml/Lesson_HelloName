@@ -67,10 +67,8 @@ namespace Lesson_HelloName.Classes.Lesson_9
             foreach (var product in products)
             {
                 product.Info();
-
-                bool isExpired = product.CheckIfProductExpired();
-
-                if (isExpired)
+                            
+                if (product.CheckIfProductExpired())
                 {
                     expiredProducts.Add(product);
                 }
