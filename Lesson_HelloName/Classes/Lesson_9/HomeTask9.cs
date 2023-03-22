@@ -29,7 +29,7 @@ namespace Lesson_HelloName.Classes.Lesson_9
                 Console.WriteLine($"Message: {ex.Message}");
             }
 
-            var newList = new Dictionary<string, int>()
+            var List_2 = new Dictionary<string, int>()
             {
                 ["One"] = 1,
                 ["Two"] = 2,
@@ -43,7 +43,7 @@ namespace Lesson_HelloName.Classes.Lesson_9
                 ["Ten"] = 10,
             };
 
-            foreach (var value in newList)
+            foreach (var value in List_2)
             {
                 Console.WriteLine(value);
             }
@@ -66,8 +66,8 @@ namespace Lesson_HelloName.Classes.Lesson_9
 
             foreach (var product in products)
             {
-                product.Info();
-                            
+                product.Info();                          
+
                 if (product.CheckIfProductExpired())
                 {
                     expiredProducts.Add(product);
