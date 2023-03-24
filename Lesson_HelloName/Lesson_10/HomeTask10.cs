@@ -1,4 +1,6 @@
-﻿using Lesson_HelloName.Lesson_10.Task_3_Point;
+﻿using Lesson_HelloName.Classes.Lesson_7_classes.Task2;
+using Lesson_HelloName.Lesson_10.Task_2_Car;
+using Lesson_HelloName.Lesson_10.Task_3_Point;
 using System;
 using System.Collections.Generic;
 using System.Drawing;
@@ -34,6 +36,21 @@ namespace Lesson_HelloName.Lesson_10
 
             // Delete element from array not realize
             firstArray.DeleteElement(7);
+        }
+
+        public static void Task2()
+        {
+            var electricCar = new Car<Electric>(new Electric());
+            electricCar.Movement();
+            electricCar.RefillingCar();
+
+            var petrolCar = new Car<Petrol>(new Petrol());
+            petrolCar.Movement();
+            petrolCar.RefillingCar();
+
+            var dieselCar = new Car<Diesel>(new Diesel());
+            dieselCar.Movement();
+            dieselCar.RefillingCar();
         }
 
         public static void Task3()
