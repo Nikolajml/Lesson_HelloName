@@ -10,9 +10,9 @@ namespace Lesson_HelloName.Lesson_10.Task_2_Car
     {
         public T engine;
 
-        public Car(T motor)
+        public Car(T engineType)
         {
-            engine = motor;
+            engine = engineType;
         }
 
         public void Movement()
