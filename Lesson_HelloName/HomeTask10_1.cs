@@ -24,10 +24,7 @@ namespace Lesson_HelloName
                     max2 = intArray[i];
                 }
             }
-
-            Console.WriteLine("Max1 is ");
-            Console.WriteLine(max1);
-
+                 
             Console.WriteLine("Max2 is ");
             Console.WriteLine(max2);
         }
@@ -42,19 +39,15 @@ namespace Lesson_HelloName
             {
                 if (array[i] == 0)
                 {
+                    if (array[countForZero] == 1)
+                    {
+                        array[countForZero] = array[i];
+                        array[i] = 1;
+                    }   
+
                     countForZero++;
                 }                
-            }
-
-            for (int i = 0; i < countForZero; i++)
-            {
-                array[i] = 0;
-            }
-
-            for (int i = countForZero; i < array.Length; i++)
-            {
-                array[i] = 1;
-            }
+            }     
 
             var arrayElements = string.Join(" ", array);
             Console.WriteLine(arrayElements);
