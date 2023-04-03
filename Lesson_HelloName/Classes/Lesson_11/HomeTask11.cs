@@ -1,7 +1,6 @@
-﻿using Lesson_HelloName.Classes.Lesson_11;
-using static Lesson_HelloName.Classes.Lesson_11.PriceMonitor;
+﻿using static Lesson_HelloName.Classes.Lesson_11.PriceMonitor;
 
-namespace Lesson_HelloName
+namespace Lesson_HelloName.Classes.Lesson_11
 {
     internal class HomeTask11
     {
@@ -9,7 +8,7 @@ namespace Lesson_HelloName
         {
             Person person = new Person("Ivan");
             PriceMonitor monitor = new PriceMonitor(ShowPrice);
-            
+
             Random random = new Random();
 
             PriceDelegat priceDelegat = ShowPrice;
@@ -20,6 +19,6 @@ namespace Lesson_HelloName
             priceDelegat(random.Next(100, 700));
             priceDelegat(random.Next(100, 700));
             priceDelegat(random.Next(100, 700));
-        }        
+        }
     }
 }

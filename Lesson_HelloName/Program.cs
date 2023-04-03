@@ -1,5 +1,5 @@
-﻿using Lesson_HelloName;
-using Lesson_HelloName.Classes;
+﻿using Lesson_HelloName.Classes;
+using Lesson_HelloName.Classes.Lesson_11;
 using Lesson_HelloName.Classes.Lesson_9;
 
 namespace Lesson_HelloName
