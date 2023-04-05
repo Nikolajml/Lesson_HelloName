@@ -31,7 +31,7 @@ namespace Lesson_HelloName
 
         public static void Task2()
         {
-            Auto car = new Car("BMW", 1245, 220);
+            Auto car = new MyCar("BMW", 1245, 220);
             Auto moto = new Moto("Tayota", 1111, 300);
             Auto truck = new Truck("MAZ", 7777, 190);
 

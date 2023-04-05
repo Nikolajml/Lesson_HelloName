@@ -2,13 +2,14 @@
 using Lesson_HelloName.Classes.Lesson_11;
 using Lesson_HelloName.Classes.Lesson_9;
 
+
 namespace Lesson_HelloName
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            HomeTask11.Task1();
+            HomeTask10_1.Task2();
         }
         /*Задание 2
         Напишите программу определения, попадает ли указанное пользователем число от 0 до 100 
