@@ -54,11 +54,11 @@ namespace Lesson_HelloName.Classes.Lesson_12
         /// <summary>
         /// 4. The method that returns the number of unique values in an array.            
         /// </summary>
-        public int NumberOfUniqueValues()
+        public void NumberOfUniqueValues()
         {
             var uniqValues = wordsArray.Distinct();
             var countUniqValue = uniqValues.Count();
-            return countUniqValue;
+            Console.WriteLine($"4. The array of words contains <<{countUniqValue}>> unique valeu;");
         }
 
         /// <summary>
@@ -80,12 +80,14 @@ namespace Lesson_HelloName.Classes.Lesson_12
         /// 6. The method returns the length of the shortest word.            
         /// </summary>
 
-        public int GetLengthShortestWord()
+        public void GetLengthShortestWord()
         {
             var shortestWordLength = wordsArray.OrderBy(w => w.Length).FirstOrDefault().Count(); ;
-            return shortestWordLength;
+            Console.WriteLine($"6. The shortest word in the array contains <<{shortestWordLength}>> element(s);"); ;
         }
 
-
+        /// <summary>
+        /// 7. The method that converts a dictionary to a list and swaps each key and value            
+        /// </summary>        
     }
 }
