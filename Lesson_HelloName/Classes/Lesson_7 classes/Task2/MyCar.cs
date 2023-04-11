@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace Lesson_HelloName.Classes.Lesson_7_classes.Task2
 {
-    internal class Car : Auto
+    internal class MyCar : Auto
     {
-        public Car(string mark, int number, double speed) : base(mark, number, speed)
+        public MyCar(string mark, int number, double speed) : base(mark, number, speed)
         {            
             this.loadCapacity = 1000.00;
         }
